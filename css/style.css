@@ -126,6 +126,7 @@ body {
 
 .res {
   font-size: 80px;
+  font-style: italic;
   font-weight: 800;
 }
 
@@ -134,4 +135,38 @@ body {
 }
 span {
   color: var(--color-1);
+}
+
+@media (max-width: 375px) {
+  .container {
+    height: 480px;
+    width: 340px;
+    border-radius: 15px 15px 90px 15px;
+    padding: 50px 20px;
+  }
+
+  .btn {
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    margin-top: 0;
+  }
+
+  .inp {
+    width: 85px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-6);
+    margin-right: 15px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-7);
+  }
+  .res {
+    font-style: italic;
+    font-size: 30px;
+  }
 }
