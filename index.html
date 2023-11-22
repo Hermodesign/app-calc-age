@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="form">
+        <div class="inp-lab">
+          <div class="inp-box">
+            <label class="lbl l1" for="day">Day</label>
+            <input
+              class="inp"
+              type="text"
+              id="day"
+              name="day"
+              placeholder="DD"
+            />
+            <p class="hidden reqD">Must be a valid day</p>
+            <p class="requD hidden">This field is required</p>
+          </div>
+          <div class="inp-box">
+            <label class="lbl l2" for="month">Month</label>
+            <input
+              class="inp"
+              type="text"
+              id="month"
+              name="month"
+              placeholder="MM"
+            />
+            <p class="hidden reqM">Must be a valid month</p>
+            <p class="requM hidden">This field is required</p>
+          </div>
+          <div class="inp-box">
+            <label class="lbl l3" for="year">Year</label>
+            <input
+              class="inp"
+              type="text"
+              id="year"
+              name="year"
+              placeholder="YYYY"
+            />
+            <p class="hidden reqY">Must be a valid year</p>
+            <p class="requY hidden">This field is required</p>
+          </div>
+        </div>
+        <button class="btn" type="submit"></button>
+      </div>
+      <p class="res years"><span id="ageSpan">--</span> years</p>
+      <p class="res months"><span id="monthsSpan">--</span> months</p>
+      <p class="res days"><span id="daysSpan">--</span> days</p>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

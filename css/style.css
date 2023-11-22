@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap');
+
+:root {
+  --color-1: hsl(259, 100%, 65%);
+  --color-2: hsl(0, 100%, 67%);
+
+  --color-3: hsl(0, 0%, 100%);
+  --color-4: hsl(0, 0%, 94%);
+  --color-5: hsl(0, 0%, 86%);
+  --color-6: hsl(0, 1%, 44%);
+  --color-7: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  background-color: var(--color-4);
+}
+
+.container {
+  height: 650px;
+  width: 840px;
+  background: var(--color-3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px 20px 190px 20px;
+  padding: 60px 56px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Stavljanje elemenata jedan ispod drugog */
+  align-items: flex-start;
+}
+
+.inp-lab {
+  display: flex; /* Postavljanje input polja u red */
+  width: 100%; /* Da se input polja rašire preko celog prostora */
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--color-5);
+}
+
+.lbl {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-6);
+  display: block;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+.inp {
+  width: 160px;
+  height: 70px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--color-6);
+  margin-right: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-7);
+}
+
+.inp:focus-within::placeholder {
+  color: transparent;
+}
+
+.inp:focus {
+  border: 1px solid var(--color-1);
+}
+
+.reqD,
+.reqM,
+.reqY {
+  font-size: 14px;
+  color: var(--color-2);
+}
+
+.requD,
+.requM,
+.requY {
+  font-size: 14px;
+  color: var(--color-2);
+}
+
+.hidden {
+  display: none;
+}
+
+.redBorder {
+  border: 1px solid var(--color-2);
+}
+.redLabel {
+  color: var(--color-2);
+}
+
+.btn {
+  margin-top: -47.5px;
+  margin-left: auto;
+  width: 95px;
+  height: 95px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--color-1);
+  background-image: url(/assets/images/icon-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+
+.res {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.years {
+  margin-top: -30px;
+}
+span {
+  color: var(--color-1);
+}
